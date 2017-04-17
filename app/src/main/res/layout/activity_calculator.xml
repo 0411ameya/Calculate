@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_activity_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ameya.calculate.CalculatorActivity">
+
+    <fragment
+        android:id="@+id/frag_display"
+        android:name="com.ameya.calculate.DisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_display" />
+
+    <fragment
+        android:id="@+id/frag_input"
+        android:name="com.ameya.calculate.InputFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_display"
+        tools:layout="@layout/fragment_input" />
+</RelativeLayout>
